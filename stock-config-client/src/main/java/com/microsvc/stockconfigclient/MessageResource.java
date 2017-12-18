@@ -13,9 +13,18 @@ public class MessageResource {
 
 	@Value("${message: Default Hello}")
 	private String message;
+	@Value("${url: Default Hello}")
+	private String url;
+	@Value("${brokerUrl: Default Hello}")
+	private String brokerUrl;
 
 	@GetMapping("/message")
 	public String message() {
-		return message;
+		return this.toString();
+	}
+
+	@Override
+	public String toString() {
+		return "MessageResource [message=" + message + ", url=" + url + ", brokerUrl=" + brokerUrl + "]";
 	}
 }

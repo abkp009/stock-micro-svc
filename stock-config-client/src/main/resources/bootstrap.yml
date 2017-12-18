@@ -1,0 +1,13 @@
+spring:
+ application:
+  name: app,db,mq
+ profiles:
+  active: default
+ cloud:
+  config:
+    uri: http://localhost:9898
+
+management:
+  security:
+   enabled: false
+    

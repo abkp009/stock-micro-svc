@@ -1,0 +1,7 @@
+server:
+  port: 9898
+  
+endpoints:
+  actuator:
+    enabled: true
+  
